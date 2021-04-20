@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import MovieProps from './MovieProps';
+import { useSelector } from 'react-redux';
+import { RootReducerType } from '../reducers';
 
-const Movie = ({ movies, isLoading }: { movies: MovieProps[], isLoading: boolean }): JSX.Element => {
+const Movie = (): JSX.Element => {
 
+    const { isLoading, movies } = useSelector((state: RootReducerType) => state.Movies);
+
+    console.log(isLoading, movies);
+    
     return <>
         <section>
             <div className="inner">
