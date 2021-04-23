@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '.tsx', '.css'],
+    extensions: ['.js', '.jsx', '.tsx', '.css', '.scss'],
   },
   entry: {
     app: './client',

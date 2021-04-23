@@ -7,8 +7,7 @@ export const initialState: MovieReduce = {
 
 
 const reducer = (state: MovieReduce = initialState, action: MovieAction): MovieReduce => {
-    console.log('movies', action.payload, action.type);
-    
+
     switch (action.type) {
         case FETCH_MOVIES_DATA_SUCCESS:
             return {
